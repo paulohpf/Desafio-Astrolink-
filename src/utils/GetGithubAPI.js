@@ -7,9 +7,7 @@ export function searchUsers(search, callback) {
     return axios.get(`${api}search/users?q=${search}&per_page=5${client}`).then(function(response) {
         callback(response.data)
     }).catch(function(error) {
-        return setTimeout(function(data, callback) {
-            searchUsers(data, callback);
-        }, 3600, search, callback);
+        console.error(error);
     });
 }
 
