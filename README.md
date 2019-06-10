@@ -1,8 +1,6 @@
 ## Sobre o Projeto
 
-O projeto mostra os conteúdo do GitHub de um usuário pelo login, na pesquisa você pode digitar o login do usuário e apertar em buscar, ou teclar enter, ou pesquisar por um login
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto mostra os conteúdo do GitHub de um usuário pelo login, no campo de texto você pode digitar o login do usuário e apertar em buscar, ou teclar enter, ou escolher um usuário da sugestão
 
 ## Available Scripts
 
