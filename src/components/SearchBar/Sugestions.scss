@@ -13,6 +13,7 @@
 
     &:hover {
         display: block;
+        z-index: 9;
     }
 
     &.loading {
@@ -47,4 +48,5 @@
 
 .searchBarInput:focus:hover + .suggestions  {
     display: block;
+    z-index: 9;
 }
