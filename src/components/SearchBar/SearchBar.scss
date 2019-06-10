@@ -1,0 +1,39 @@
+.header {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+    border-bottom: 1px solid #dfe6e9;
+    
+    .searchBar {
+        position: relative;
+        max-width: 300px;
+        line-height: 1;
+        
+        
+        .searchBarInput {
+            width: 100%;
+            line-height: 20px;
+            min-height: 28px;
+            padding: 5px;
+        }
+
+        .searchButton {
+            position: absolute;
+            right: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                width: 23px;
+                height: 22px;
+                background: url('../../images/search.png') no-repeat;
+                background-size: 23px;
+                position: relative;
+                display: block;
+                padding: 5px;
+                background-position: center;
+            }
+        }
+    }
+}

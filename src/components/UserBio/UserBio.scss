@@ -1,0 +1,84 @@
+.userData {
+    width: 25%;
+    padding-right: 40px;
+    .user-info {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        .user-description {
+            display: flex;
+            flex-direction: column;
+            .user-avatar {
+                width: 100%;
+            }
+            .namesCard {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0.67em 0 0;
+                }
+                .userLogin {
+                    margin: 0 0 0.67em 0;
+                    font-size: 20px;
+                }
+            }
+        }
+        .user-details {
+            display: flex;
+            flex-direction: column;
+            .item {
+                padding-top: 8px;
+                font-size: 14px;
+                text-decoration: none;
+
+                &.email::before {
+                    content: '';
+                    width: 15px;
+                    height: 12px;
+                    background: url('../../images/message.png') no-repeat;
+                    background-size: 100%;
+                    position: relative;
+                    display: inline-block;
+                    margin: 0 5px 0 0;
+                    background-position: center;
+                    vertical-align: middle;
+                }
+            }   
+            .follow {
+                display: flex;         
+                .following {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .userData {
+        width: 33.333%;       
+    }   
+}
+
+@media (max-width: 768px) {
+    .userData {
+        width: 100%;
+        .user-info {
+            .user-description {
+                flex-direction: initial;
+                .user-avatar {
+                    width: 25%;
+                    height: 25%;
+                }
+                .namesCard {
+                    padding-left: 20px;
+                    h1 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
